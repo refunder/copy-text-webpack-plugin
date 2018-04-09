@@ -1,14 +1,17 @@
 {
   "name": "copy-text-webpack-plugin",
-  "version": "0.0.1",
+  "version": "0.0.43",
   "description": "Webpack plugin that gives ability to copy text from compiled assets to a separat file",
   "main": "dist/CopyTextPlugin.js",
   "author": "Isak Berglind",
   "license": "MIT",
   "repository":  "https://github.com/refunder/copy-text-webpack-plugin.git",
   "peerDependencies": {
-    "webpack": "> 3"
+    "webpack": "> 2.0.0"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mkdir -p dist && npm run build:compile",
