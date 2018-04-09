@@ -1,0 +1,27 @@
+{
+  "name": "copy-between-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin that gives ability to copy text from compiled assets to a separat file",
+  "main": "dist/CopyBetweenPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && npm run build:compile",
+    "build:compile": "babel -d dist src",
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "copy"
+  ],
+  "author": "Isak Berglind",
+  "license": "MIT",
+  "repository":  "https://github.com/refunder/copy-text-webpack-plugin.git",
+  "peerDependencies": {
+    "webpack": "> 3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0"
+  }
+}
