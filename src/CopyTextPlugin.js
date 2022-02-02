@@ -53,15 +53,13 @@ class CopyBetweenPlugin {
     }
 
     apply(compiler) {
-        compiler.hooks.emit.tap('copyTextPlugin', (compilation, callback) => {
+        compiler.hooks.emit.tap('copyTextPlugin', (compilation) => {
             this.compilation = compilation;
             this.findStringsInAssets();
             this.strings = this.allowDoubleEntries
                 ? this.strings
                 : this.removeDoubleEntries(this.strings);
             this.addStringsToAssets();
-
-            callback();
         });
     }
 }
